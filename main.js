@@ -704,7 +704,7 @@ document.addEventListener('DOMContentLoaded', function GameOver() {
         const ranks = await response.json();
         ranks.push(newScore);
         
-        const postResponse = await fetch('Tetris_main',{
+        const postResponse = await fetch('index',{
            method: 'POST',
            headers: {
                 'Content-Type': 'application/json'
